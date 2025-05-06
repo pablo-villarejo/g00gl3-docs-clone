@@ -1,12 +1,11 @@
+import Link from 'next/link'
 
-import { Button } from '@/components/ui/button'
-import { describe } from 'node:test'
 const Home = () => {
   return (
     <div className="flex min-h-screen items-center justify-center">
-      <Button variant="secondary">
-        Click me!
-      </Button>
+      Click&nbsp;<Link href="/documents/123">
+      <span className='text-blue-500 underline'>here</span>
+      </Link>&nbsp;to go to document id.
     </div>
   )
 }
